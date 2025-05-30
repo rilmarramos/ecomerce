@@ -1,0 +1,155 @@
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.tarjeta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main{
+  padding: 20px;
+  text-align: center;
+  color: #f9f9f9;
+  font-family: 'Courier New';
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  align-items: center;
+}
+
+h2{
+  color:black
+}
+
+.cart-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background: rgb(51, 51, 51);
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 999;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.cart-drawer.open {
+  transform: translateX(0%);
+  background-color:rgb(51, 51, 51) ;
+  border-radius: 2%;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid black;
+  background-color: rgb(51, 51, 51);
+  font-family:'Courier New' ;
+  
+ 
+}
+
+.cart-content {
+  padding: 16px;
+  color: rgb(30, 255, 0);
+  font-family: 'Courier New';
+
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.product{
+  margin-top: 15px;
+  place-items: center;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.fondoProducto{
+  position: relative;
+  background-color: #ddd;
+  border-radius: 5%;
+  box-shadow: rgb(155, 155, 155);
+  width: 280px;
+  aspect-ratio: 1;
+  transition: transform 1s;
+}
+
+.imagenCompus{
+  position: absolute;
+  width: 40%;
+  translate: -50% -100%;
+  inset: 50%
+}
+
+
+.product-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 12px;
+  color: #9b9b9b;
+}
+
+.product-price {
+  font-size: 1rem;
+  color: #9b9b9b;
+  margin-bottom: 12px;
+}
+
+.add-button {
+  padding: 8px 16px;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.galeria{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.fa-cart-shopping{
+  color:red
+}
+.btnCart{
+  background-color: transparent;
+  border: none;
+}
+.cart-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cart-item button{
+  margin-left: 10px;
+  border: none;
+  background-color: transparent;
+}
